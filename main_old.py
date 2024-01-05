@@ -173,9 +173,6 @@ player.add(Player())
 
 obstacle_group = pygame.sprite.Group()
 
-idle_background = pygame.image.load('graphics/backgroundidle.jpg').convert()
-idle_background = pygame.transform.scale(idle_background, (1280,720))
-
 forest_surface = pygame.image.load('graphics/Cartoon_Forest_BG_02.png').convert()
 forest_surface = pygame.transform.scale(forest_surface, (1280,620))
 forest_surface_width = forest_surface.get_width()
@@ -333,7 +330,8 @@ while True:
         #     game_active = False
     else:
         screen.fill((94,129,169))
-        screen.blit(idle_background,(0,0))
+        screen.blit(forest_surface,(0,0))
+        screen.blit(ground_surface, (0,540))
         obstacle_rect_list.clear()
         player_rect.midbottom = (80,540)
         player_gravity = 0
