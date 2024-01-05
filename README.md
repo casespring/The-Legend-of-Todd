@@ -1,2 +1,3 @@
 # The-Legend-of-Todd
-An endless runner using pygame
+
+Hello I'm Marco and this is my endless runner using pygame
